@@ -1,0 +1,6 @@
+<html>
+	<title>First applet</title>
+		<body>
+		<applet code= "bin\com\adsb\school\Applets\Applet2.class" width="500" height="400"></applet>
+		</body>
+</html>
