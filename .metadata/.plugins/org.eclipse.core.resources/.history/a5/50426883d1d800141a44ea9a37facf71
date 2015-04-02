@@ -45,15 +45,17 @@ public class Applets4 extends Applet implements ActionListener{
 		String name = "Hayden J.";
 		String date = (today.getMonth()+1) + "/" + today.getDay();
 		
-		
+		try{
 		if(e.getSource() ==button1){
 			text1.setText(name);
 		}
 		if(e.getSource() == button2){		
 			text2.setText(date);
 		}
-	}
+		}catch(Exception ex){
+			System.out.print(ex);
+		}
 		
+	}
+
 }
-
-

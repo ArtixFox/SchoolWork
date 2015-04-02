@@ -52,8 +52,8 @@ public class Applets4 extends Applet implements ActionListener{
 		if(e.getSource() == button2){		
 			text2.setText(date);
 		}
-	}
+		}
 		
+	}
+
 }
-
-

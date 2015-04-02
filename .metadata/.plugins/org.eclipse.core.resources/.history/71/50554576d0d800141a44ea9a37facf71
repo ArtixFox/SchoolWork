@@ -9,6 +9,7 @@ public class Applets4 extends Applet implements ActionListener{
 	
 	private static final long SerialVersionUID = 1L;
 
+	
 	private Button button1, button2;
 	private TextField text1, text2;
 	private Date today;
@@ -16,28 +17,14 @@ public class Applets4 extends Applet implements ActionListener{
 	private Label nameLabel, dateLabel;
 	
 	public void init(){
-		//setting the size of the applet
+	
 		setSize(500, 500);
-		//init objects
+		
 		today = new Date();
 		text1 = new TextField(20);
 		text2 = new TextField(20);
 		textArea1 = new TextArea("Welcome to my applet. This shows my appletmaking skills.", 6, 20);
-		button1 = new Button("Name");
-		button2 = new Button("Date");
-		nameLabel = new Label("Name");
-		dateLabel = new Label("Date");
-		
-		
-		
-		//adding objects to screen
 		add(textArea1);
-		add(button1);
-		add(text1);
-		add(button2);
-		add(text2);
-		
-		
 		
 	}
 	
@@ -46,14 +33,6 @@ public class Applets4 extends Applet implements ActionListener{
 		String date = (today.getMonth()+1) + "/" + today.getDay();
 		
 		
-		if(e.getSource() ==button1){
-			text1.setText(name);
-		}
-		if(e.getSource() == button2){		
-			text2.setText(date);
-		}
 	}
-		
+
 }
-
-
