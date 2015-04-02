@@ -32,22 +32,23 @@ public class Applets4 extends Applet implements ActionListener{
 		
 		
 		//adding objects to screen
-		
-		add(textArea1);
 		add(nameLabel);
-		add(text1);
+		add(textArea1);
 		add(button1);
-		add(dateLabel);
-		add(text2);
-		add(button2);
-		//listeners
 		button1.addActionListener(this);
+		add(dateLabel);
+		add(text1);
+		add(button2);
 		button2.addActionListener(this);
-	}
+		add(text2);
+		
+		
+		
+	}/////////Kiel can you see this/////////////
 	
 	public void actionPerformed(ActionEvent e){
 		String name = "Hayden J.";
-		String date = (today.getMonth()+1) + "/" + (today.getDay()-2) + "/" + (today.getYear()+1900);
+		String date = (today.getMonth()+1) + "/" + today.getDay() + "/" + today.getYear();
 		
 		
 		if(e.getSource() ==button1){

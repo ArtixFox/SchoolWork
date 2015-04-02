@@ -47,7 +47,7 @@ public class Applets4 extends Applet implements ActionListener{
 	
 	public void actionPerformed(ActionEvent e){
 		String name = "Hayden J.";
-		String date = (today.getMonth()+1) + "/" + (today.getDay()-2) + "/" + (today.getYear()+1900);
+		String date = (today.getMonth()+1) + "/" + today.getDay() + "/" + today.getYear()+1900;
 		
 		
 		if(e.getSource() ==button1){
