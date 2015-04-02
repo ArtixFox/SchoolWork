@@ -31,8 +31,10 @@ public class Applets4 extends Applet implements ActionListener{
 		
 		
 		//adding objects to screen
+		add(nameLabel);
 		add(textArea1);
 		add(button1);
+		add(dateLabel);
 		add(text1);
 		add(button2);
 		add(text2);
