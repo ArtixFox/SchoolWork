@@ -3,6 +3,7 @@ package com.adsb.school.Applets;
 import java.awt.*;
 import java.applet.*;
 import java.awt.event.*;
+import java.awt.event.ActionListener;
 import java.util.Date;
 
 public class Applets4 extends Applet implements ActionListener{
@@ -46,7 +47,7 @@ public class Applets4 extends Applet implements ActionListener{
 	
 	public void actionPerformed(ActionEvent e){
 		String name = "Hayden J.";
-		String date = (today.getMonth()+1)+ "/" +today.getDate()+"/"+(today.getYear()+1900);
+		String date = (today.getMonth()+1) + "/" + (today.getDay()-2) + "/" + (today.getYear()+1900);
 		
 		
 		if(e.getSource() ==button1){
