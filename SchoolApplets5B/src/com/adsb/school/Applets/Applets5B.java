@@ -4,8 +4,10 @@ import java.awt.*;
 import java.applet.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 
-public class Applets5B extends Applet implements ActionListener {
+public class Applets5B extends Applet implements ActionListener{
 
 	private static final long serialVersionUID = 1L;
 
@@ -14,9 +16,13 @@ public class Applets5B extends Applet implements ActionListener {
 	TextArea area1;
 	Button button1;
 	Panel p1,p2,p3,p4,p5;
+	
+	
 	public void init(){
+		
 		setSize(1080,720);
 		setLayout(new BorderLayout());
+		
 		p1 = new Panel();//north
 		p2 = new Panel();//west
 		p3 = new Panel();//center
@@ -28,8 +34,8 @@ public class Applets5B extends Applet implements ActionListener {
 		txt1= new TextField(5);
 		txt2 = new TextField(5);
 		txt3 = new TextField(5);
-		txt4 = new TextField(5);
-		txt5 = new TextField(5);
+		txt4 = new TextField(7);
+		txt5 = new TextField(7);
 		txt6 = new TextField(15);
 		area1 = new TextArea("y=(-b±Sqrt(b²-4ac)/2");
 		button1 = new Button("Calculate!");
@@ -75,7 +81,7 @@ public class Applets5B extends Applet implements ActionListener {
 			else if(Math.pow(b,2)-4*a*c <0){
 				txt6.setText("there are 0 roots.");
 			}
-			//finding roots
+		
 			
 		}
 		

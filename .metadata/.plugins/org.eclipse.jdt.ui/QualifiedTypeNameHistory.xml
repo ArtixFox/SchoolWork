@@ -7,4 +7,5 @@
 <fullyQualifiedTypeName name="java.applet.Applet"/>
 <fullyQualifiedTypeName name="java.awt.event.ActionEvent"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.awt.event.KeyListener"/>
 </qualifiedTypeNameHistroy>

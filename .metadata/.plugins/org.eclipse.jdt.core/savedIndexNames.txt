@@ -1,54 +1,28 @@
-<<<<<<< HEAD
-INDEX VERSION 1.127+C:\Users\Hayden\Desktop\School\.metadata\.plugins\org.eclipse.jdt.core
-962087657.index
-3208426689.index
-3668621785.index
-1891765932.index
-1550597019.index
-2316102611.index
-134296050.index
-1957968718.index
-3803567967.index
-130147870.index
-4159432100.index
-3311757857.index
-35764307.index
-=======
-INDEX VERSION 1.127+C:\Users\jack7564\Desktop\Git Work\.metadata\.plugins\org.eclipse.jdt.core
-3007127425.index
-1256107336.index
-3568472113.index
-306336462.index
-242585676.index
-3712356655.index
-2958316637.index
-189064776.index
->>>>>>> ff70dc73495a0a5782c1e8b11e51d2bb810281b3
-1418943478.index
-1409493203.index
-1314880127.index
-<<<<<<< HEAD
-2348113578.index
-2548499729.index
+INDEX VERSION 1.127+C:\Users\jack7564\Desktop\School work\SchoolWork\.metadata\.plugins\org.eclipse.jdt.core
 2805784394.index
-2690449751.index
-946580212.index
-3264989491.index
-1179815636.index
-3883868377.index
-=======
-3775902742.index
-2190475441.index
-816354987.index
-1582307769.index
 3101299222.index
-409046531.index
-825279904.index
-2219492442.index
-962087657.index
+3712356655.index
 1741592635.index
-1802101586.index
-2183535362.index
+1550597019.index
+2219492442.index
+242585676.index
+2958316637.index
+3007127425.index
+306336462.index
+1582307769.index
+3775902742.index
+1256107336.index
 2612086611.index
+1314880127.index
 3802261674.index
->>>>>>> ff70dc73495a0a5782c1e8b11e51d2bb810281b3
+2190475441.index
+2183535362.index
+1418943478.index
+825279904.index
+1802101586.index
+409046531.index
+189064776.index
+962087657.index
+3311757857.index
+3568472113.index
+816354987.index
