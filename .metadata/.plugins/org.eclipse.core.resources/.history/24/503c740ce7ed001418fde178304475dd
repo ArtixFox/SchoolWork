@@ -1,0 +1,29 @@
+package com.adsb.school.Applets;
+
+import java.awt.*;
+import java.applet.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class Applets5B extends Applet implements ActionListener {
+
+	private static final long serialVersionUID = 1L;
+
+	
+	public void init(){
+		
+		
+	}
+
+	public void actionPerformed(ActionEvent e){
+		
+	}
+
+
+	
+	
+	
+	
+	
+	
+}

@@ -1,6 +1,0 @@
-<html>
-	<title>First applet</title>
-		<body>
-		<applet code= "Applet1.class" width="300" height="200"></applet>
-		</body>
-</html>

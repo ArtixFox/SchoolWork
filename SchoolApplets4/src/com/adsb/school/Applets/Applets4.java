@@ -3,6 +3,7 @@ package com.adsb.school.Applets;
 import java.awt.*;
 import java.applet.*;
 import java.awt.event.*;
+import java.awt.event.ActionListener;
 import java.util.Date;
 
 public class Applets4 extends Applet implements ActionListener{
@@ -33,20 +34,25 @@ public class Applets4 extends Applet implements ActionListener{
 		//adding objects to screen
 		
 		add(textArea1);
+		add(nameLabel);
+		add(text1);
 		add(button1);
+
 		add(nameLabel);
 		add(text1);
 		add(button2);
+
 		add(dateLabel);
 		add(text2);
-		
-		
-		
+		add(button2);
+		//listeners
+		button1.addActionListener(this);
+		button2.addActionListener(this);
 	}
 	
 	public void actionPerformed(ActionEvent e){
 		String name = "Hayden J.";
-		String date = (today.getMonth()+1) + "/" + today.getDay();
+		String date = (today.getMonth()+1) + "/" + (today.getDay()-2) + "/" + (today.getYear()+1900);
 		
 		
 		if(e.getSource() ==button1){
