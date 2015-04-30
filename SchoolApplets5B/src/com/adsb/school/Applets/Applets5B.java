@@ -6,20 +6,23 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.util.*;
 
 public class Applets5B extends Applet implements ActionListener{
 
 	private static final long serialVersionUID = 1L;
 
-	Label north, date;
+	Label north, theDate;
 	TextField txt1,txt2,txt3,txt4,txt5,txt6;
 	TextArea area1;
 	Button button1;
 	Panel p1,p2,p3,p4,p5;
-	
+	Date today;
+
 	
 	public void init(){
-		
+	
+		//String dateMessage = (Calendar.MONTH+1)+ "/" +Calendar.DAY_OF_MONTH+"/"+(Calendar.YEAR);
 		setSize(1080,720);
 		setLayout(new BorderLayout());
 		
@@ -30,7 +33,10 @@ public class Applets5B extends Applet implements ActionListener{
 		p5 = new Panel();//south
 		north = new Label("this program will be used to find the roots" +
 		"and calculate a quadratic equation inputed by the user.");
-		date = new Label();
+		
+		
+		theDate = new Label("Todays Date: The calendar classes arenot working");
+		
 		txt1= new TextField(5);
 		txt2 = new TextField(5);
 		txt3 = new TextField(5);
@@ -49,6 +55,7 @@ public class Applets5B extends Applet implements ActionListener{
 		p3.add(txt6);
 		p4.add(area1);
 		p5.add(button1);
+		p5.add(theDate);
 		add("North", p1);
 		add("West", p2);
 		add("Center", p3);
@@ -64,6 +71,8 @@ public class Applets5B extends Applet implements ActionListener{
 			double a = Double.parseDouble(txt1.getText());
 			double b = Double.parseDouble(txt2.getText());
 			double c = Double.parseDouble(txt3.getText());
+			area1.setText("y=(-b±Sqrt(b²-4ac)/2"+"\n"+"y=(-("+b+")±Sqrt[("+b+")²-4("+
+			a+")("+c+"]/2");
 			
 			if(Math.pow(b, 2)-4*a*c == 0){
 				txt6.setText("there is 1 root.");
