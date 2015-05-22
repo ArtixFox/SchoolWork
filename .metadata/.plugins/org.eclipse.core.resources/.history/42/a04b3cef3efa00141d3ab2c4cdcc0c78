@@ -1,0 +1,15 @@
+package com.school.Frame;
+
+import java.awt.Toolkit;
+
+public class GetWidth {
+
+	double WIDTH, HEIGHT;
+	public GetWidth(){
+	java.awt.Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+	WIDTH= screenSize.getWidth();
+	HEIGHT = screenSize.getHeight();
+	
+	System.out.println(WIDTH + " " +HEIGHT);
+	}
+}

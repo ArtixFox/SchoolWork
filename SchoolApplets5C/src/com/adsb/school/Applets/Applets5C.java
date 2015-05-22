@@ -22,9 +22,9 @@ public class Applets5C extends Applet implements ActionListener, ItemListener{
 		
 		p1 = new Panel();
 		p2 = new Panel();
-		txt1 = new TextField(10);
-		txt2 = new TextField(10);
-		txt3 = new TextField(10);
+		txt1 = new TextField(15);
+		txt2 = new TextField(15);
+		txt3 = new TextField(15);
 		txt4 = new TextField(20);
 		txt5 = new TextField(20);
 		space = new Label("");

@@ -1,0 +1,69 @@
+package com.school.Frame;
+
+import java.awt.*;
+import java.awt.Dimension;
+import java.awt.Graphics;
+import java.awt.Toolkit;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JFrame;
+
+import com.school.*;
+
+public class Main extends Frame implements ActionListener{
+	
+	private static final long SerialVersionUID = 1L;
+	
+	
+	
+	
+		static double WIDTH,HEIGHT;
+		static Panel p;
+		static Button button1;
+		static TextField wf, hf;
+	
+	
+	public static void main(String args[]){
+		
+		
+		Frame.Frame();
+		p=new Panel();
+		button1 = new Button("click");
+		
+		wf = new TextField(5);
+		hf = new TextField(5);
+		
+		p.add(wf);
+		p.add(hf);
+		p.add(button1);
+		button1.addActionListener(null);
+		f.add(p);
+		
+		
+		
+		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+		WIDTH= screenSize.getWidth();
+		HEIGHT = screenSize.getHeight();
+		
+		System.out.println(WIDTH + " " +HEIGHT);
+		
+	}
+	
+	public void paint(Graphics g){
+	
+		
+	}
+
+
+	public void actionPerformed(ActionEvent e) {
+		String msg = "Hello from java!";
+		
+		if(e.getSource() == button1){
+			wf.setText("WIDTH: " + WIDTH);
+			hf.setText("HEIGHT: "+ HEIGHT);
+		}
+		
+	}
+	
+}
